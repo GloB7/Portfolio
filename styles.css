@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: ltr; /* Default direction for languages */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lang-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.lang-switcher button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.lang-switcher button img {
+    width: 20px;
+    height: 20px;
+}
