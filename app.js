@@ -18,7 +18,7 @@ async function setLanguage(lang) {
     localStorage.setItem('lang', lang);
 
     // Adjust text direction for RTL languages
-    document.body.style.direction = (lang === 'ar') ? 'rtl' : 'ltr';
+    document.body.style.direction = (lang === 'fr') ? 'rtl' : 'ltr';
 }
 
 // Function to initialize the language
