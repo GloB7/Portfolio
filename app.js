@@ -18,7 +18,7 @@ async function setLanguage(lang) {
     localStorage.setItem('lang', lang);
 
     // Adjust text direction for RTL languages
-    document.body.style.direction = (lang === 'fr') ? 'rtl' : 'ltr';
+    document.body.style.direction = (lang === 'ar') ? 'rtl' : 'ltr';
 }
 
 // Function to initialize the language
@@ -26,11 +26,11 @@ function initializeLanguage() {
     const urlParams = new URLSearchParams(window.location.search);
     let lang = urlParams.get('lang') ||
                localStorage.getItem('lang') ||
-               navigator.language.slice(0, 2) ||
-               'en';
+               'fr'; // Set French as the default language
+
     const supportedLangs = ['fr', 'ar', 'en'];
     if (!supportedLangs.includes(lang)) {
-        lang = 'en';
+        lang = 'fr'; // Default to French if the language is not supported
     }
     setLanguage(lang);
 }
