@@ -28,7 +28,7 @@ function initializeLanguage() {
                localStorage.getItem('lang') ||
                navigator.language.slice(0, 2) ||
                'en';
-    const supportedLangs = ['en', 'fr', 'ar'];
+    const supportedLangs = ['fr', 'ar', 'en'];
     if (!supportedLangs.includes(lang)) {
         lang = 'en';
     }
