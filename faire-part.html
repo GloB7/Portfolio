@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre mariage</title>
+  <style>
+    *, *:before, *:after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -100px;
+      margin-top: -100px;
+      width: 200px;
+      height: 200px;
+      overflow: visible;
+    }
+
+    .logo__mainGroup {
+      transform-origin: 50px 50px;
+      animation: mainGroupAnim 9s 1s infinite;
+    }
+
+    .logo__grayGroup {
+      animation: grayGroupAnim 9s 1s infinite;
+    }
+
+    .logo__square {
+      stroke: #D41E48;
+      stroke-dasharray: 400px, 400px;
+      stroke-dashoffset: 400px;
+      animation: square-anim 9s 1s infinite;
+    }
+
+    .logo__line {
+      stroke: #D41E48;
+      stroke-dasharray: 200px, 200px;
+      stroke-dashoffset: 200px;
+    }
+
+    .logo__line-1 {
+      animation: line-anim 9s -0.5s infinite;
+    }
+
+    .logo__line-2 {
+      animation: line-anim 9s -0.5s infinite;
+    }
+
+    .logo__line-3 {
+      animation: line-anim 9s -0.5s infinite;
+    }
+
+    .logo__line-4 {
+      animation: line-anim 9s -0.5s infinite;
+    }
+
+    .logo__line-5 {
+      animation: line-anim 9s -0.5s infinite;
+    }
+
+    .logo__line-6 {
+      animation: line-anim 9s 0s infinite;
+    }
+
+    .logo__stroke {
+      stroke: #D41E48;
+      stroke-dasharray: 800px, 800px;
+      stroke-dashoffset: 800px;
+      animation: strokeAnim 9s 1s ease-in-out infinite;
+    }
+
+    .logo__fill {
+      stroke: #D41E48;
+      stroke-dasharray: 400px, 400px;
+      stroke-dashoffset: 400px;
+      animation: fillAnim 9s 1s infinite;
+    }
+
+    @keyframes square-anim {
+      12% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes line-anim {
+      19% {
+        stroke-dashoffset: 100px;
+      }
+      26% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes mainGroupAnim {
+      26% {
+        transform: rotate(0deg);
+      }
+      33% {
+        transform: rotate(-45deg);
+      }
+      95% {
+        transform: rotate(-45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: rotate(-45deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes grayGroupAnim {
+      33% {
+        opacity: 1;
+      }
+      40% {
+        opacity: 0.5;
+      }
+      70% {
+        opacity: 0.5;
+      }
+      80% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @keyframes strokeAnim {
+      33% {
+        stroke-dashoffset: 800px;
+      }
+      66% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes fillAnim {
+      66% {
+        stroke-dashoffset: 400px;
+      }
+      85% {
+        stroke-dashoffset: 0;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    body {
+        background-color:  #f0b4dc ;
+        color: #fa0bd2;
+    }
+    .other {
+      position: absolute;
+      left: 0;
+      bottom: 0.5rem;
+      width: 100%;
+      text-align: right;
+    }
+
+    .titre {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      font-size: 1.5rem;
+    }
+
+    .details {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-40%, -50%);
+      z-index: 1;
+      font-size: 1.5rem;
+      text-align: center;
+      width: 80%;
+    }
+
+
+    .other__link {
+      font-size: 1.3rem;
+      margin: 0 1rem;
+    }
+
+
+    .__heartPath {
+      stroke: #E21737;
+      fill: transparent;
+      stroke-dasharray: 308.522, 308.522;
+      stroke-dashoffset: 308.522;
+      animation: heart-anim 30s 30s infinite;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="titre">
+    <h1> Bienvenue à notre mariage</h1>
+  </div>
+  <div class="logo">
+    <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" version="1.1"> <!-- Agrandir la vue du SVG -->
+      <g class="heart-loader__group logo__mainGroup">
+        <path class="heart-loader__square logo__square" stroke-width="1" fill="none" d="M0,40 0,100 60,100 60,40z"/>
+        <path class="heart-loader__circle m--left logo__line logo__line-1" stroke-width="1" fill="none" d="M60,70 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+        <path class="heart-loader__circle m--right logo__line logo__line-2" stroke-width="1" fill="none" d="M60,70 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+
+        <path id="hp" class="heart-loader__heartPath logo__stroke" stroke-width="2" d="M60,40 a30,30 0 0,1 0,60 L0,100 0,40 a30,30 0 0,1 60,0" />
+      </g>
+    </svg>
+  </div>
+  <div class="details">
+    <h1> Le groupe 6 vous convie à notre mariage aux couleurs tunisiennes, marocaines et congolaises.</h1>
+  </div>
+  <div class="other">
+    <a href="" target="_blank" class="other__link">Célébrons l'amour</a>
+  </div>
+</body>
+</html>
