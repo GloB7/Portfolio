@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xmlns:schema="http://schema.org/" xmlns:foaf="http://xmlns.com/foaf/0.1/">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Langages du Web Sémantique</title>
+    <link rel="stylesheet" type="text/css" href="infocss.css" />
+    <script type="text/javascript" src="infojs.js" defer></script>
+</head>
+<body>
+    <div vocab="http://schema.org/" typeof="foaf:Document">
+        <div class="navbar" typeof="schema:WebSite">
+            <div class="logo" property="schema:name"><a href="index.html" property="schema:url">Gloire_Portfolio</a></div>
+            <ul class="menu">
+                <li><a href="projets.html" property="schema:about">Projets</a></li>
+                <li><a href="informations.html" property="schema:about">Informations</a></li>
+                <li><a href="#" onclick="openPdf('CV_gloire.pdf')" property="schema:about">CV</a></li>
+            </ul>
+            <div class="language-buttons">
+                <a href="#" onclick="translatePage('en')" property="schema:language" rel="alternate">English</a>
+                <a href="#" onclick="translatePage('fr')" property="schema:language" rel="alternate">Français</a>
+                <a href="#" onclick="translatePage('ar')" property="schema:language" rel="alternate">العربية</a>
+            </div>
+        </div>
+
+        <div class="langages">
+            <h1 property="schema:name">Langages du Web Sémantique</h1>
+            <div class="langage" typeof="schema:TechArticle">
+                <h2 property="schema:name">RDF (Resource Description Framework)</h2>
+                <p property="schema:description">
+                    RDF est un modèle standardisé pour représenter les données sur le web. Il utilise des triplets sujet-prédicat-objet pour décrire les ressources et leurs relations.
+                </p>
+            </div>
+            <div class="langage" typeof="schema:TechArticle">
+                <h2 property="schema:name">RDFS (RDF Schema)</h2>
+                <p property="schema:description">
+                    RDFS étend RDF en fournissant des classes et des propriétés pour structurer les données RDF, permettant ainsi de définir des schémas et des hiérarchies de types.
+                </p>
+            </div>
+            <div class="langage" typeof="schema:TechArticle">
+                <h2 property="schema:name">OWL (Web Ontology Language)</h2>
+                <p property="schema:description">
+                    OWL est un langage de représentation des ontologies sur le web. Il permet de définir des vocabulaires formels pour décrire la signification des concepts, les relations et les règles.
+                </p>
+            </div>
+            <div class="langage" typeof="schema:TechArticle">
+                <h2 property="schema:name">SPARQL (SPARQL Protocol and RDF Query Language)</h2>
+                <p property="schema:description">
+                    SPARQL est un langage de requête pour interroger des données RDF. Il permet d'extraire et de manipuler des données RDF en utilisant des requêtes similaires à SQL.
+                </p>
+            </div>
+            <div class="langage" typeof="schema:TechArticle">
+                <h2 property="schema:name">SHACL (Shapes Constraint Language)</h2>
+                <p property="schema:description">
+                    SHACL est un langage pour décrire des modèles de données RDF avec des contraintes. Il permet de spécifier des règles sur la structure et les valeurs des données RDF.
+                </p>
+            </div>
+            <div class="langage" typeof="schema:TechArticle">
+                <h2 property="schema:name">SKOS (Simple Knowledge Organization System)</h2>
+                <p property="schema:description">
+                    SKOS est utilisé pour représenter des thésaurus et des vocabulaires contrôlés sur le web. Il facilite la création et l'interopérabilité des systèmes de gestion des connaissances.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
