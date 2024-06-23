@@ -1,28 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="title">Mon Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gloire_Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="moncss.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 <body>
-<div class="container">
-    <h1 id="title">My Portfolio</h1>
-    <p id="welcome">Welcome to my portfolio</p>
-    <nav>
-        <ul>
-            <li id="about">About Me</li>
-            <li id="contact">Contact</li>
+
+    <div class="navbar">
+        <div class="logo" data-translate-key="portfolio_title">Gloire_Portfolio</div>
+        <ul class="menu">
+            <li><a href="projets.html" data-translate-key="projects">Projets</a></li>
+            <li><a href="informations.html" data-translate-key="info">Informations</a></li>
+            <li><a href="#" onclick="openPdf('CV_gloire.pdf')" data-translate-key="cv">CV</a></li>
         </ul>
-    </nav>
-</div>
-<div class="lang-switcher">
-    <a href="#" onclick="setLanguage('fr')">&#x1F1EB;&#x1F1F7;</a> <!-- French flag -->
-    <a href="#" onclick="setLanguage('en')">&#x1F1EC;&#x1F1E7;</a> <!-- English flag -->
-    <a href="#" onclick="setLanguage('sa')">&#x1F1F8;&#x1F1E6;</a> <!-- Saudi Arabia flag -->
-</div>
-<script src="app.js" defer></script>
+        <div class="language-buttons">
+            <a href="#" onclick="translatePage('en')">&#x1F1EC;&#x1F1E7;</a> <!-- Drapeau anglais -->
+            <a href="#" onclick="translatePage('fr')">&#x1F1EB;&#x1F1F7;</a> <!-- Drapeau français -->
+            <a href="#" onclick="translatePage('ar')">&#x1F1E6;&#x1F1F7;</a> <!-- Drapeau arabe -->
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="profile">
+            <div class="profile-left">
+                <img src="images/identité.jpg" alt="Photo d'identité" class="profile-photo">
+            </div>
+            <div class="profile-right">
+                <h1 data-translate-key="name">Gloire BAYOUNDOULA</h1>
+                <p class="description" data-translate-key="description">En qualité de spécialiste de la sémantique web, mon domaine d'expertise se concentre sur l'amélioration des données et du contenu web afin de simplifier la compréhension et de favoriser l'interopérabilité entre les machines et les utilisateurs. Je suis responsable de la structuration des données afin de les rendre plus accessibles, compréhensibles et utilisables par les technologies modernes telles que les moteurs de recherche, les assistants virtuels et les applications intelligentes. Grâce à ma connaissance approfondie des normes et des technologies du web sémantique comme RDF, OWL et JSON-LD, mon objectif est de concevoir des expériences utilisateur améliorées et de développer des solutions informatiques plus performantes.</p>
+                <p class="phone" data-translate-key="phone">Téléphone: <a property="phone" href="tel:+33-">+33 </a>.</p>
+            </div>
+        </div>
+        <div class="social-links">
+            <button onclick="window.open('https://github.com/GloB7', '_blank')">
+                <img src="images/github.jpg" alt="GitHub">
+            </button>
+            <button onclick="window.open('https://www.linkedin.com/in/gloire-bayoundoula/', '_blank')">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </button>
+            <button onclick="window.open('https://www.youtube.com/channel/UCu6V7aAdS3hlsk8TFMNVOsw', '_blank')">
+                <img src="images/youtube.jpg" alt="YouTube">
+            </button>
+        </div>
+
+
+        <div class="video">
+            <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/orgu-5b-LdQ?cc_lang_pref=fr&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
+
 
